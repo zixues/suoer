@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textViewCarPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Car Price: $0" />
+
+        <SeekBar
+            android:id="@+id/seekBarCarPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100000"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textViewDownPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Down Payment: $0" />
+
+        <SeekBar
+            android:id="@+id/seekBarDownPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="50000"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textViewInterestRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interest Rate: 0%" />
+
+        <SeekBar
+            android:id="@+id/seekBarInterestRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textViewLoanTenure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loan Tenure: 0 months" />
+
+        <SeekBar
+            android:id="@+id/seekBarLoanTenure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="60"
+            android:progress="0" />
+
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate EMI" />
+
+        <TextView
+            android:id="@+id/textViewEMIResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonShowAmortization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Amortization Schedule" />
+
+        <ListView
+            android:id="@+id/listViewAmortization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
